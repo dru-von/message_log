@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="main_frame">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Text" id="txt_message">
+        <property name="autoseparators">false</property>
+        <property name="blockcursor">false</property>
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="height">9</property>
+        <property name="insertborderwidth">0</property>
+        <property name="insertofftime">200</property>
+        <property name="insertontime">0</property>
+        <property name="insertunfocussed">hollow</property>
+        <property name="insertwidth">1</property>
+        <property name="maxundo">0</property>
+        <property name="padx">0</property>
+        <property name="pady">0</property>
+        <property name="relief">flat</property>
+        <property name="selectborderwidth">0</property>
+        <property name="tabstyle">wordprocessor</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Test Message</property>
+        <property name="undo">true</property>
+        <property name="width">41</property>
+        <property name="wrap">word</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">3</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Button_1">
+        <property name="command">click_this</property>
+        <property name="default">active</property>
+        <property name="text" translatable="yes">Submit</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="cmb_messages">
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">nw</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
